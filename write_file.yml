@@ -1,0 +1,14 @@
+---
+- name: Playbook Write Test INI File
+  hosts: all
+  connection: local
+  gather_facts: false
+  tasks:
+
+  - name: Ensure "temperature=cold is in section "[drinks]" in specified file
+    ini_file:
+      path: /home/tony/test.ini
+      section: servers
+      option: ansible_user
+      value: tony
+      backup: yes
