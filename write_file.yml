@@ -12,3 +12,4 @@
       option: ansible_user
       value: tony
       backup: yes
+    delegate_to: localhost

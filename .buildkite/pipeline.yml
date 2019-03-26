@@ -4,7 +4,7 @@ steps:
     command: echo "Hello ProRail!"
 
   - label: Run Pipeline test
-    command: ansible-playbook -i "localhost," write_file.yml
+    command: ansible-playbook write_file.yml
 
   - label: End of test pipeline
     command: echo "Hiep Hoi"
