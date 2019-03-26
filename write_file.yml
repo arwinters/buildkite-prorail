@@ -7,7 +7,7 @@
 
   - name: Ensure "ansible_user=tony" is in section "[servers]" in specified file
     ini_file:
-      path: /tmp/inventory_test.ini
+      path: /var/lib/buildkite-agent/tmp/inventory_test.ini
       section: servers
       option: ansible_user
       value: tony
