@@ -5,9 +5,9 @@
   gather_facts: false
   tasks:
 
-  - name: Ensure "temperature=cold is in section "[drinks]" in specified file
+  - name: Ensure "ansible_user=tony" is in section "[servers]" in specified file
     ini_file:
-      path: /home/tony/test.ini
+      path: /tmp/inventory_test.ini
       section: servers
       option: ansible_user
       value: tony
