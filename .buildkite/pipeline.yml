@@ -1,7 +1,7 @@
 ---
 steps:
-  - label: Clautomate Pipeline test ProRail
-    command: echo "Hello ProRail!"
+  - label: Test Playbook on valid syntax.
+    command: ansible-playbook --syntax-check bad.yml
 
   - label: Run Pipeline test
     command: ansible-playbook write_file.yml
