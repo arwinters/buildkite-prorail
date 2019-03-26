@@ -1,7 +1,7 @@
 ---
 steps:
   - label: Test Playbook on valid syntax.
-    command: ansible-playbook --syntax-check bad.yml
+    command: ansible-playbook --syntax-check write_file.yml
 
   - wait: ~
     continue_on_failure: false
